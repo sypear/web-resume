@@ -193,13 +193,13 @@ body {
 }
 
 .resume-item_desc {
-    width: 308px;
+    width: 300px;
 }
 
 .resume-item_desc::before {
     content: "";
     display: block;
-    width: 308px;
+    width: 300px;
     height: 1px;
     margin-bottom: 30px;
     background-color: #A4A4A4;
