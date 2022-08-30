@@ -26,6 +26,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     background-color: #fbfbfb;
+    word-break: keep-all;
 }
 
 .sr-only {
@@ -38,7 +39,7 @@ body {
 }
 
 .resume {
-    width: 1000px;
+    width: 800px;
     margin: 100px auto;
     padding: 50px;
     color: #1E1E1E;
@@ -47,45 +48,42 @@ body {
 }
 
 .term {
-    width: 150px;
     display: flex;
     flex-flow: column;
+    width: 100px;
+    margin-right: 50px;
 }
 
 .detail {
-    width: 410px;
+    flex: 1;
     display: flex;
     flex-flow: column;
 }
 
 .large-title {
-    font-size: 24px;
-}
-
-.large-desc {
-    font-size: 18px;
-    line-height: 28.8px;
-    color: #494949;
-}
-
-.title {
     font-size: 19px;
 }
 
-.desc {
+.title {
     font-size: 17px;
-    line-height: 27.2px;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
     color: #494949;
 }
 
 .date {
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .institution {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    color: #494949;
+    font-style: italic;
+    color: #6D6D6D;
 }
 
 .preface {
@@ -95,32 +93,32 @@ body {
 }
 
 .info {
-    width: 230px;
+    width: 190px;
     display: flex;
     flex-direction: column;
 }
 
 .info-name {
     margin-bottom: 5px;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .info-position {
-    margin-bottom: 80px;
-    font-size: 19px;
+    margin-bottom: 60px;
+    font-size: 16px;
     font-weight: 400;
     font-style: italic;
 }
 
 .info-image {
-    width: 220px;
+    width: 190px;
     border: 1px solid #A4A4A4;
     border-radius: 100%;
 }
 
 .introduce {
     margin-top: 55px;
-    width: 600px;
+    width: 450px;
 }
 
 .contact {
@@ -130,7 +128,7 @@ body {
 .contact::before {
     content: "";
     display: block;
-    width: 600px;
+    width: 450px;
     height: 3px;
     background-color: #A4A4A4;
 }
@@ -138,7 +136,7 @@ body {
 .contact::after {
     content: "";
     display: block;
-    width: 600px;
+    width: 450px;
     height: 1px;
     background-color: #A4A4A4;
 }
@@ -173,18 +171,6 @@ body {
     background-image: url("./assets/email.png");
 }
 
-.contact-type {
-    margin-bottom: 5px;
-    font-size: 18px;
-    color: #494949;
-}
-
-.contact-desc {
-    font-size: 16px;
-    font-weight: 400;
-    color: #494949;
-}
-
 .profile .large-title {
     margin-bottom: 15px;
 }
@@ -196,18 +182,18 @@ body {
 }
 
 .resume-item_title {
-    width: 230px;
+    width: 160px;
     text-align: center;
 }
 
 .resume-item_desc {
-    width: 600px;
+    width: 450px;
 }
 
 .resume-item_desc::before {
     content: "";
     display: block;
-    width: 600px;
+    width: 450px;
     height: 1px;
     margin-bottom: 30px;
     background-color: #A4A4A4;
