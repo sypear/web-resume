@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "IBMPlexSansKR-Regular", sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fbfbfb;
+}
+
+.sr-only {
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.resume {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 50px;
+    color: #1E1E1E;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.term {
+    width: 150px;
+    display: flex;
+    flex-flow: column;
+}
+
+.detail {
+    width: 410px;
+    display: flex;
+    flex-flow: column;
+}
+
+.large-title {
+    font-size: 24px;
+}
+
+.large-desc {
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #494949;
+}
+
+.title {
+    font-size: 19px;
+}
+
+.desc {
+    font-size: 17px;
+    line-height: 27.2px;
+    color: #494949;
+}
+
+.date {
+    font-size: 19px;
+}
+
+.institution {
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.preface {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.info {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-name {
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+.info-position {
+    margin-bottom: 80px;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.info-image {
+    width: 220px;
+    border: 1px solid #A4A4A4;
+    border-radius: 100%;
+}
+
+.introduce {
+    margin-top: 55px;
+    width: 600px;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.contact::before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 3px;
+    background-color: #A4A4A4;
+}
+
+.contact::after {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 1px;
+    background-color: #A4A4A4;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 25px 0;
+}
+
+.cotact-list {
+    display: flex;
+}
+
+.cotact-list::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 5px 15px 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.cotact-list.phone::before {
+    background-image: url("./assets/telephone.png");
+}
+
+.cotact-list.email::before {
+    background-image: url("./assets/email.png");
+}
+
+.contact-type {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #494949;
+}
+
+.contact-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.profile .large-title {
+    margin-bottom: 15px;
+}
+
+.resume-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.resume-item_title {
+    width: 230px;
+    text-align: center;
+}
+
+.resume-item_desc {
+    width: 600px;
+}
+
+.resume-item_desc::before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 1px;
+    margin-bottom: 30px;
+    background-color: #A4A4A4;
+}
+
+.resume-item_desc-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.resume-item_desc-list:last-child {
+    margin-bottom: 0;
+}
+
+.resume-item_desc-list .term .date,
+.resume-item_desc-list .detail .title {
+    margin-bottom: 5px;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sns-type.github {
+    margin-right: 20px;
+}
+
+.sns-image {
+    width: 35px;
+}
