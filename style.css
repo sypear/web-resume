@@ -39,7 +39,7 @@ body {
 }
 
 .resume {
-    width: 800px;
+    width: 600px;
     margin: 100px auto;
     padding: 50px;
     color: #1E1E1E;
@@ -50,7 +50,7 @@ body {
 .term {
     display: flex;
     flex-flow: column;
-    width: 100px;
+    width: 80px;
     margin-right: 50px;
 }
 
@@ -61,26 +61,32 @@ body {
 }
 
 .large-title {
-    font-size: 19px;
-}
-
-.title {
     font-size: 17px;
 }
 
+.large-desc {
+    font-size: 13px;
+    line-height: 20.8px;
+    color: #494949;
+}
+
+.title {
+    font-size: 13px;
+}
+
 .desc {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 25.6px;
+    line-height: 19.2px;
     color: #494949;
 }
 
 .date {
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .institution {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 400;
     font-style: italic;
     color: #6D6D6D;
@@ -89,46 +95,46 @@ body {
 .preface {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 130px;
+    margin-bottom: 70px;
 }
 
 .info {
-    width: 190px;
+    width: 150px;
     display: flex;
     flex-direction: column;
 }
 
 .info-name {
     margin-bottom: 5px;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .info-position {
     margin-bottom: 60px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     font-style: italic;
 }
 
 .info-image {
-    width: 190px;
+    width: 150px;
     border: 1px solid #A4A4A4;
     border-radius: 100%;
 }
 
 .introduce {
     margin-top: 55px;
-    width: 450px;
+    width: 300px;
 }
 
 .contact {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contact::before {
     content: "";
     display: block;
-    width: 450px;
+    width: 300px;
     height: 3px;
     background-color: #A4A4A4;
 }
@@ -136,7 +142,7 @@ body {
 .contact::after {
     content: "";
     display: block;
-    width: 450px;
+    width: 300px;
     height: 1px;
     background-color: #A4A4A4;
 }
@@ -145,7 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin: 25px 0;
+    margin: 15px 0;
 }
 
 .cotact-list {
@@ -155,9 +161,9 @@ body {
 .cotact-list::before {
     content: "";
     display: block;
-    width: 35px;
-    height: 35px;
-    margin: 5px 15px 0 0;
+    width: 25px;
+    height: 25px;
+    margin: 5px 10px 0 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -172,28 +178,28 @@ body {
 }
 
 .profile .large-title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .resume-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 130px;
+    margin-bottom: 70px;
 }
 
 .resume-item_title {
-    width: 160px;
+    width: 150px;
     text-align: center;
 }
 
 .resume-item_desc {
-    width: 450px;
+    width: 308px;
 }
 
 .resume-item_desc::before {
     content: "";
     display: block;
-    width: 450px;
+    width: 308px;
     height: 1px;
     margin-bottom: 30px;
     background-color: #A4A4A4;
