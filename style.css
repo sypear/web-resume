@@ -1,34 +1,3 @@
-@font-face {
-    font-family: 'IBMPlexSansKR-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "IBMPlexSansKR-Regular", sans-serif;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #fbfbfb;
-    word-break: keep-all;
-}
-
 .sr-only {
     position: absolute;
     z-index: -100;
@@ -47,76 +16,37 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.term {
-    display: flex;
-    flex-flow: column;
-    width: 80px;
-    margin-right: 50px;
-}
-
-.detail {
-    flex: 1;
-    display: flex;
-    flex-flow: column;
-}
-
-.large-title {
-    font-size: 17px;
-}
-
-.large-desc {
-    font-size: 13px;
-    line-height: 20.8px;
-    color: #494949;
-}
-
-.title {
-    font-size: 13px;
-}
-
-.desc {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 19.2px;
-    color: #494949;
-}
-
-.date {
-    font-size: 13px;
-}
-
-.institution {
-    font-size: 11px;
-    font-weight: 400;
-    font-style: italic;
-    color: #6D6D6D;
-}
-
-.preface {
+.resume section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
 }
 
-.info {
+.resume section:last-child {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+}
+
+.headline {
     width: 150px;
     display: flex;
     flex-direction: column;
 }
 
-.info-name {
+.headline-title {
     margin-bottom: 5px;
     font-size: 26px;
 }
 
-.info-position {
+.headline-position {
     margin-bottom: 60px;
     font-size: 13px;
     font-weight: 400;
     font-style: italic;
 }
 
-.info-image {
+.headline-image {
     width: 150px;
     border: 1px solid #A4A4A4;
     border-radius: 100%;
@@ -124,41 +54,41 @@ body {
 
 .introduce {
     padding-top: 55px;
-    width: 300px;
+    width: 320px;
 }
 
-.contact {
+.introduce-contact {
     margin-bottom: 30px;
 }
 
-.contact::before {
+.introduce-contact::before {
     content: "";
     display: block;
-    width: 300px;
+    width: 320px;
     height: 3px;
     background-color: #A4A4A4;
 }
 
-.contact::after {
+.introduce-contact::after {
     content: "";
     display: block;
-    width: 300px;
+    width: 320px;
     height: 1px;
     background-color: #A4A4A4;
 }
 
-.contact-wrapper {
+.introduce-contact ul {
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin: 15px 0;
 }
 
-.cotact-list {
+.introduce-cotact_list {
     display: flex;
 }
 
-.cotact-list::before {
+.introduce-cotact_list::before {
     content: "";
     display: block;
     width: 25px;
@@ -169,60 +99,67 @@ body {
     background-size: contain;
 }
 
-.cotact-list.phone::before {
+.introduce-cotact_list.phone::before {
     background-image: url("./assets/telephone.png");
 }
 
-.cotact-list.email::before {
+.introduce-cotact_list.email::before {
     background-image: url("./assets/email.png");
 }
 
-.profile .large-title {
+.profile h2 {
     margin-bottom: 10px;
 }
 
-.resume-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-}
-
-.resume-item_title {
+.part-title {
     width: 150px;
     text-align: center;
 }
 
-.resume-item_desc {
-    width: 300px;
+.part-content {
+    width: 320px;
 }
 
-.resume-item_desc::before {
+.part-content_list--title {
+    display: flex;
+    flex-flow: column;
+    width: 80px;
+    margin-right: 50px;
+}
+
+.part-content_list--content {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.part-content::before {
     content: "";
     display: block;
-    width: 300px;
+    width: 320px;
     height: 1px;
     margin-bottom: 30px;
     background-color: #A4A4A4;
 }
 
-.resume-item_desc-list {
+.part-content_list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.resume-item_desc-list:last-child {
+.part-content_list:last-child {
     margin-bottom: 0;
 }
 
-.resume-item_desc-list .term .date,
-.resume-item_desc-list .detail .title {
+.part-content_list--title .date,
+.part-content_list--content .title {
     margin-bottom: 5px;
 }
 
-.sns-list {
+.sns {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -230,6 +167,6 @@ body {
     margin-right: 20px;
 }
 
-.sns-image {
+.sns-type_image {
     width: 25px;
 }
