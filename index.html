@@ -5,60 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배승연 : 이력서</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./font.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section class="resume">
-        <div class="preface">
-            <article class="info">
-                <h1 class="info-name">배승연</h1>
-                <strong class="info-position">Web Front-end Developer</strong>
-                <img class="info-image" src="./assets/profile.jpg" alt="프로필 사진">         
-            </article>
+    <main class="resume">
+        <section>
+            <div class="headline">
+                <h1 class="headline-title">배승연</h1>
+                <strong class="headline-position">Web Front-end Developer</strong>
+                <img class="headline-image" src="./assets/profile.jpg" alt="프로필 사진">         
+            </div>
 
             <div class="introduce">
-                <article class="contact">
+                <div class="introduce-contact">
                     <h2 class="sr-only">CONTACT</h2>
 
-                    <ul class="contact-wrapper">
-                        <li class="cotact-list phone">
+                    <!-- 현재는 list item이 2개 밖에 없으나 연락처의 경우 추후 추가 될 가능성이 있으므로 ul 태그를 사용하였음 -->
+                    <ul>
+                        <li class="introduce-cotact_list phone">
                             <div>
-                                <h3 class="title">PHONE</h3>
-                                <strong class="desc">0107***2***</strong>
+                                <h3 class="fs-medium">PHONE</h3>
+                                <strong class="fs-small fw-regular fc-gray">0107***2***</strong>
                             </div>
                         </li>
-                        <li class="cotact-list email">
+                        <li class="introduce-cotact_list email">
                             <div>
-                                <h3 class="title">EMAIL</h3>
-                                <strong class="desc">bsyeon015@gmail.com</strong>
+                                <h3 class="fs-medium">EMAIL</h3>
+                                <strong class="fs-small fw-regular fc-gray">bsyeon015@gmail.com</strong>
                             </div>
                         </li>
                     </ul>
-                </article>
+                </div>
 
-                <article class="profile">
-                    <h2 class="large-title">PROFILE</h2>
-                    <p class="large-desc">
+                <div class="profile">
+                    <h2 class="fs-large">PROFILE</h2>
+                    <p class="fs-medium fc-gray">
                         누구나 쉽게 이용할 수 있는 웹을 만들고 싶은 주니어 프론트엔드 개발자 배승연입니다.
                     </p>
-                </article>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <article class="resume-item">
-            <div class="resume-item_title">
-                <h2 class="large-title">WORK</h2>
+        <section>
+            <div class="part-title">
+                <h2 class="fs-large">WORK</h2>
             </div>
 
-            <ol class="resume-item_desc">
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2021 - 2022</strong>
-                        <strong class="institution">*****</strong>
+            <!-- 현재는 list item이 1개 밖에 없으나 경력 사항의 경우 추후 추가 될 가능성이 있으므로 ol 태그를 사용하였음 -->
+            <ol class="part-content">
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2021 - 2022</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">*****</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">QA Engineer</h3>
-                        <p class="desc">
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">QA Engineer</h3>
+                        <p class="fs-small fw-regular fc-gray">
                             ******** ****** Security 제품 담당<br/>
                             오류 분석, 제품 패키지 제작 및 배포,
                             모듈 업데이트, 테스트 시트 작성 및 테스트 진행,
@@ -67,114 +71,117 @@
                     </div>
                 </li>
             </ol>
-        </article>
+        </section>
 
-        <article class="resume-item">
-            <div class="resume-item_title">
-                <h2 class="large-title">EDUCATION</h2>
+        <section>
+            <div class="part-title">
+                <h2 class="fs-large">EDUCATION</h2>
             </div>
 
-            <ol class="resume-item_desc">
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2022 - Now</strong>
-                        <strong class="institution">멋쟁이 사자처럼</strong>
+            <!-- 현재는 list item이 2개 밖에 없으나 교육 사항의 경우 추후 추가 될 가능성이 있으므로 ol 태그를 사용하였음 -->
+            <ol class="part-content">
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2022 - Now</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">멋쟁이 사자처럼</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">프론트엔드 스쿨 3기</h3>
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">프론트엔드 스쿨 3기</h3>
                     </div>
                 </li>
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2016 - 2020</strong>
-                        <strong class="institution">금오공과대학교</strong>
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2016 - 2020</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">금오공과대학교</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">컴퓨터소프트웨어공학 전공</h3>
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">컴퓨터소프트웨어공학 전공</h3>
                     </div>
                 </li>
             </ol>
-        </article>
+        </section>
 
-        <article class="resume-item">
-            <div class="resume-item_title">
-                <h2 class="large-title">AWARDS</h2>
+        <section>
+            <div class="part-title">
+                <h2 class="fs-large">AWARDS</h2>
             </div>
 
-            <ol class="resume-item_desc">
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2018</strong>
-                        <strong class="institution">한국정보기술학회</strong>
+            <!-- 현재는 list item이 2개 밖에 없으나 수상 경력의 경우 추후 추가 될 가능성이 있으므로 ol 태그를 사용하였음 -->
+            <ol class="part-content">
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2018</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">한국정보기술학회</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">2018년 한국정보기술학회 대학생논문경진대회 은상</h3>
-                        <p class="desc">
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">한국정보기술학회 대학생 논문 경진대회 은상</h3>
+                        <p class="fs-small fw-regular fc-gray">
                             스마트 미러로 소통하는 교내 SNS 시스템
                         </p>
                     </div>
                 </li>
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2018</strong>
-                        <strong class="institution">금오공과대학교 공학교육혁신센터</strong>
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2018</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">금오공과대학교 공학교육혁신센터</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">KIT Engineering fair 2018</h3>
-                        <p class="desc">
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">KIT Engineering fair 장려상</h3>
+                        <p class="fs-small fw-regular fc-gray">
                             영상 감지 녹화 시스템
                         </p>
                     </div>
                 </li>
             </ol>
-        </article>
+        </section>
 
-        <article class="resume-item">
-            <div class="resume-item_title">
-                <h2 class="large-title">CERTIFICATE</h2>
+        <section>
+            <div class="part-title">
+                <h2 class="fs-large">CERTIFICATE</h2>
             </div>
 
-            <ol class="resume-item_desc">
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2022</strong>
-                        <strong class="institution">한국정보통신기술협회</strong>
+            <ol class="part-content">
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2022</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">한국정보통신기술협회</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">CSTS(SW 테스트 전문가)</h3>
-                    </div>
-                </li>
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2020</strong>
-                        <strong class="institution">한국데이터산업진흥원</strong>
-                    </div>
-                    <div class="detail">
-                        <h3 class="title">SQLD(SQL 개발자)</h3>
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">CSTS(SW 테스트 전문가)</h3>
                     </div>
                 </li>
-                <li class="resume-item_desc-list">
-                    <div class="term">
-                        <strong class="date">2019</strong>
-                        <strong class="institution">한국산업인력공단</strong>
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2020</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">한국데이터산업진흥원</strong>
                     </div>
-                    <div class="detail">
-                        <h3 class="title">정보처리기사</h3>
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">SQLD(SQL 개발자)</h3>
+                    </div>
+                </li>
+                <li class="part-content_list">
+                    <div class="part-content_list--title">
+                        <strong class="fs-medium">2019</strong>
+                        <strong class="fs-tiny fc-lgray fs-italic fw-regular">한국산업인력공단</strong>
+                    </div>
+                    <div class="part-content_list--content">
+                        <h3 class="fs-medium">정보처리기사</h3>
                     </div>
                 </li>
             </ol>
-        </article>
+        </section>
 
-        <article class="sns">
+        <section>
             <h2 class="sr-only">SNS</h2>
 
-            <ul class="sns-list">
+            <!-- 현재는 list item이 2개 밖에 없으나 SNS의 경우 추후 추가 될 가능성이 있으므로 ul 태그를 사용하였음 -->
+            <ul class="sns">
                 <li class="sns-type github">
                     <h3 class="sr-only">
                         GitHub
                     </h3>
                     <a href="https://github.com/sypear">
-                        <img class="sns-image" src="./assets/github.png" alt="GitHub로 이동">
+                        <img class="sns-type_image" src="./assets/github.png" alt="GitHub로 이동">
                     </a>
                 </li>
                 <li class="sns-item-type velog">
@@ -182,11 +189,11 @@
                         Velog
                     </h3>
                     <a href="https://velog.io/@sypear">
-                        <img class="sns-image" src="./assets/velog.png" alt="Velog로 이동">
+                        <img class="sns-type_image" src="./assets/velog.png" alt="Velog로 이동">
                     </a>
                 </li>
             </ul>
-        </article>
-    </section>
+        </section>
+    </main>
 </body>
 </html>
