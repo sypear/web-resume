@@ -7,5 +7,4 @@
 <br/>
 
 # 👇 자세한 구현 내용 보러가기
-- velog 포스팅
-  - <a href="https://velog.io/@sypear/HTML-CSS-%EC%9B%B9-%EC%9D%B4%EB%A0%A5%EC%84%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0">[HTML/CSS] 웹 이력서 만들기</a>
+- 블로그 포스팅 : <a href="https://sypear.tistory.com/4">[HTML/CSS] 웹 이력서 만들기</a>
